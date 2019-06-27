@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Leetcode,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="19.删除链表的倒数第n个节点 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。 示例： 给定一个链表: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5, 和 n = 2. 当删除了倒数第二个节点后，链表变为 1-&amp;gt;2-&amp;gt;3-&amp;gt;5.  两遍扫描​    关键的问题是这道题并没有给出链表的长度，所以最简单的做法，也是我最想到的就是第一遍扫描确定长度，第二遍扫描">
+<meta name="keywords" content="Leetcode">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Leetcode热题100刷题记录">
+<meta property="og:url" content="https://xhran2010.github.io/2019/06/22/Leetcode热题100刷题记录（1）/index.html">
+<meta property="og:site_name" content="辛浩然&#39;Blog">
+<meta property="og:description" content="19.删除链表的倒数第n个节点 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。 示例： 给定一个链表: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5, 和 n = 2. 当删除了倒数第二个节点后，链表变为 1-&amp;gt;2-&amp;gt;3-&amp;gt;5.  两遍扫描​    关键的问题是这道题并没有给出链表的长度，所以最简单的做法，也是我最想到的就是第一遍扫描确定长度，第二遍扫描">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-06-24T02:39:31.984Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Leetcode热题100刷题记录">
+<meta name="twitter:description" content="19.删除链表的倒数第n个节点 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。 示例： 给定一个链表: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5, 和 n = 2. 当删除了倒数第二个节点后，链表变为 1-&amp;gt;2-&amp;gt;3-&amp;gt;5.  两遍扫描​    关键的问题是这道题并没有给出链表的长度，所以最简单的做法，也是我最想到的就是第一遍扫描确定长度，第二遍扫描">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://xhran2010.github.io/2019/06/22/Leetcode热题100刷题记录（1）/">
+
+
+
+
+
+  <title>Leetcode热题100刷题记录 | 辛浩然'Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">辛浩然'Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://xhran2010.github.io/2019/06/22/Leetcode热题100刷题记录（1）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jack Xin">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="辛浩然'Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Leetcode热题100刷题记录</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-22T18:39:08+08:00">
+                2019-06-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="19-删除链表的倒数第n个节点"><a href="#19-删除链表的倒数第n个节点" class="headerlink" title="19.删除链表的倒数第n个节点"></a>19.删除链表的倒数第n个节点</h1><blockquote>
+<p>给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。</p>
+<p>示例：</p>
+<p>给定一个链表: 1-&gt;2-&gt;3-&gt;4-&gt;5, 和 n = 2.</p>
+<p>当删除了倒数第二个节点后，链表变为 1-&gt;2-&gt;3-&gt;5.</p>
+</blockquote>
+<h2 id="两遍扫描"><a href="#两遍扫描" class="headerlink" title="两遍扫描"></a>两遍扫描</h2><p>​    关键的问题是这道题并没有给出链表的长度，所以最简单的做法，也是我最想到的就是第一遍扫描确定长度，第二遍扫描找到倒数第n个节点。按链表的删除方法删除即可。</p>
+<p>​    这版代码质量并不高，单独列出了很多边界情况的判断。后续也许可以对该代码做优化。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">removeNthFromEnd</span><span class="params">(ListNode* head, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> cnt = <span class="number">1</span>;</span><br><span class="line">        ListNode* p = head;</span><br><span class="line">        <span class="keyword">while</span>(p -&gt; next != <span class="literal">NULL</span>)&#123;</span><br><span class="line">            cnt++;</span><br><span class="line">            p = p-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(cnt == <span class="number">1</span> &amp;&amp; n == <span class="number">1</span>) <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">        <span class="keyword">if</span>(cnt == <span class="number">2</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(n == <span class="number">1</span>)&#123;</span><br><span class="line">                <span class="keyword">delete</span>(head-&gt;next);</span><br><span class="line">                head-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">                <span class="keyword">return</span> head;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(n == <span class="number">2</span>) <span class="keyword">return</span> head-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> pos = cnt - n - <span class="number">1</span>;</span><br><span class="line">        p = head;</span><br><span class="line">        cnt = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(pos == <span class="number">-1</span>) <span class="keyword">return</span> head-&gt;next;</span><br><span class="line">        <span class="keyword">while</span>(cnt != pos &amp;&amp; p-&gt;next != <span class="literal">NULL</span>) &#123;</span><br><span class="line">            p = p-&gt;next;</span><br><span class="line">            cnt++;</span><br><span class="line">        &#125;</span><br><span class="line">        ListNode* d = p-&gt;next;</span><br><span class="line">        p-&gt;next = p-&gt;next-&gt;next;</span><br><span class="line">        <span class="keyword">delete</span>(d);</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="双指针法"><a href="#双指针法" class="headerlink" title="双指针法"></a>双指针法</h2><p>​    更优的解法，是用两个指针可以实现一遍扫描。具体做法是：<strong>两个指向开头的指针，第一个先向后移动n个节点，然后两个指针一起向后移动。直到第一个指针移动到链尾，第二个指针指向的位置即为倒数第n个节点</strong>。其实这是一个很简单的思路，就好比一把长为n的尺子。</p>
+<hr>
+<h1 id="21-23-合并k个有序链表"><a href="#21-23-合并k个有序链表" class="headerlink" title="21/23.合并k个有序链表"></a>21/23.合并k个有序链表</h1><p>​    这其实是两道题，合并2个和合并k个。有相似之处，这里我放在一起解决。</p>
+<h2 id="合并2个有序链表"><a href="#合并2个有序链表" class="headerlink" title="合并2个有序链表"></a>合并2个有序链表</h2><blockquote>
+<p>将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 </p>
+<p>示例：</p>
+<p>输入：1-&gt;2-&gt;4, 1-&gt;3-&gt;4<br>输出：1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4</p>
+</blockquote>
+<h3 id="迭代"><a href="#迭代" class="headerlink" title="迭代"></a>迭代</h3><p>​    思想也很简单，比较容易想到。即开一个新的指针，每次比较这两个有序链表的头结点的大小，把小的那一个串到新指针上去，直到两个有序链表为空。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">mergeTwoLists</span><span class="params">(ListNode* l1, ListNode* l2)</span> </span>&#123;</span><br><span class="line">        ListNode* p1 = <span class="keyword">new</span> ListNode(<span class="number">-1</span>);</span><br><span class="line">        ListNode* p2 = <span class="keyword">new</span> ListNode(<span class="number">-1</span>);</span><br><span class="line">        p1 = l1;</span><br><span class="line">        p2 = l2;</span><br><span class="line">        ListNode* p = <span class="keyword">new</span> ListNode(<span class="number">-1</span>);</span><br><span class="line">        ListNode* i = <span class="keyword">new</span> ListNode(<span class="number">-1</span>);</span><br><span class="line">        i = p;</span><br><span class="line">        <span class="keyword">while</span>(p1 != <span class="literal">NULL</span> || p2 != <span class="literal">NULL</span>)&#123;</span><br><span class="line">            ListNode* t = <span class="keyword">new</span> ListNode(<span class="number">-1</span>);</span><br><span class="line">            <span class="keyword">if</span>(p1 != <span class="literal">NULL</span> &amp;&amp; p2 != <span class="literal">NULL</span>)&#123;</span><br><span class="line">                <span class="keyword">if</span>(p1-&gt;val &lt;= p2-&gt;val)&#123;</span><br><span class="line">                    t-&gt;val = p1-&gt;val;</span><br><span class="line">                    p-&gt;next = t;</span><br><span class="line">                    p1 = p1-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span>&#123;</span><br><span class="line">                    t-&gt;val = p2-&gt;val;</span><br><span class="line">                    p-&gt;next = t;</span><br><span class="line">                    p2 = p2-&gt;next;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(p1 == <span class="literal">NULL</span>)&#123;</span><br><span class="line">                t-&gt;val = p2-&gt;val;</span><br><span class="line">                p-&gt;next = t;</span><br><span class="line">                p2 = p2-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                t-&gt;val = p1-&gt;val;</span><br><span class="line">                p-&gt;next = t;</span><br><span class="line">                p1 = p1-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">            p = p-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> i-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><p>​    我不太容易想到这个方法😬，个人感觉这个题拿递归做有点大材小用了😅，具体解法请参见官方题解。</p>
+<h2 id="合并k个有序链表"><a href="#合并k个有序链表" class="headerlink" title="合并k个有序链表"></a>合并k个有序链表</h2><blockquote>
+<p>合并 k 个排序链表，返回合并后的排序链表。请分析和描述算法的复杂度。</p>
+<p>示例:</p>
+<p>输入:<br>[<br>  1-&gt;4-&gt;5,<br>  1-&gt;3-&gt;4,<br>  2-&gt;6<br>]
+输出: 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4-&gt;5-&gt;6</p>
+</blockquote>
+<h3 id="迭代-1"><a href="#迭代-1" class="headerlink" title="迭代"></a>迭代</h3><p>​    方法和合并2个有序链表很类似！区别仅在于每次要扫描一遍这k个链表的头结点的值。找到最小后，同样地将其串到新开的指针p后面去。</p>
+<h3 id="优先队列优化"><a href="#优先队列优化" class="headerlink" title="优先队列优化"></a>优先队列优化</h3><p>​    但是实际提交之后发现运行时间并不理想，时间主要耗费在每次遍历k个链表找最小的头结点，时间复杂度为$O(kN)$。而且这个时间浪费得也是不必要的，每次只会产生一个节点的更新，其他$k-1$个结点都还是原来的。其实这里我就应该想到用优先队列了，因为之前还专门看到过这方面的内容，奈何水平不够啊！</p>
+<p>​    优先队列和队列比较类似，唯一的区别在于每次取队首的元素都是这个队列中最小的元素（或最大，可以自己重载操作符）。我们首先建立一个优先队列把所有链表的头结点入队，每次出队1个结点，并将其后继结点（如果有的话）入队。以此类推，直到所有链表都为空。</p>
+<p>​    C++中定义优先队列的方法我也忘了。。。上网查询之后写在这里以备忘，主要涉及了头文件的引入、定义和运算符的重载：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">ListNode</span>*&#123;</span>&#125;;<span class="comment">// Leetcode定义的结点结构体</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">cmp</span>&#123;</span></span><br><span class="line">  <span class="function"><span class="keyword">bool</span> <span class="title">operator</span> <span class="params">()</span> <span class="params">(ListNode* a, ListNode* b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a-&gt;val &gt; b-&gt;val;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">priority_queue&lt;ListNode*,<span class="built_in">vector</span>&lt;ListNode*&gt;,cmp&gt; q;</span><br><span class="line">q.push();</span><br><span class="line">q.pop();</span><br><span class="line">q.top();</span><br></pre></td></tr></table></figure>
+
+<p>​    知道了C++中优先队列的用法，就可以写代码惹！</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">cmp</span>&#123;</span></span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">operator</span> <span class="params">()</span><span class="params">(ListNode* a,ListNode* b)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a-&gt;val &gt; b-&gt;val;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">mergeKLists</span><span class="params">(<span class="built_in">vector</span>&lt;ListNode*&gt;&amp; lists)</span> </span>&#123;</span><br><span class="line">        ListNode* p = <span class="keyword">new</span> ListNode(<span class="number">-1</span>);</span><br><span class="line">        ListNode* t = <span class="keyword">new</span> ListNode(<span class="number">-1</span>);</span><br><span class="line">        t = p;</span><br><span class="line">        <span class="keyword">int</span> minIdx, minNum;</span><br><span class="line">        priority_queue&lt;ListNode*,<span class="built_in">vector</span>&lt;ListNode*&gt;,cmp&gt; q;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i &lt; lists.size();i ++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(lists[i] != <span class="literal">NULL</span>) q.push(lists[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(q.size()&gt;<span class="number">0</span>)&#123;</span><br><span class="line">            ListNode* tmp = q.top();</span><br><span class="line">            p-&gt;next = tmp;</span><br><span class="line">            p = p-&gt;next;</span><br><span class="line">            q.pop();</span><br><span class="line">            <span class="keyword">if</span>(tmp-&gt;next != <span class="literal">NULL</span>) q.push(tmp-&gt;next);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> t-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="下一个排列"><a href="#下一个排列" class="headerlink" title="下一个排列"></a>下一个排列</h1><blockquote>
+<p>实现获取下一个排列的函数，算法需要将给定数字序列重新排列成字典序中下一个更大的排列。</p>
+<p>如果不存在下一个更大的排列，则将数字重新排列成最小的排列（即升序排列）。</p>
+<p>必须原地修改，只允许使用额外常数空间。</p>
+<p>以下是一些例子，输入位于左侧列，其相应输出位于右侧列。<br>1,2,3 → 1,3,2<br>3,2,1 → 1,2,3<br>1,1,5 → 1,5,1</p>
+</blockquote>
+<p>​    这道题中的“字典序”让我不是很理解，其实就是全排列的时候通常列举的顺序，但是我总结不出一般的规律。题目中说到如果不存在下一个更大的序列，那么这个序列指的就是降序序列。在网上查了一下，这道题的算法是：</p>
+<blockquote>
+<ul>
+<li>从末尾开始找$i$，直到$num[i]&lt;num[i+1]$，确定$i$的位置。</li>
+<li>再从末尾开始找$j$，直到找到第一个$num[j]&gt;num[i]$，确定$j$的位置。</li>
+<li>交换$i$和$j$，新的位置记为$i’$和$j’$</li>
+<li>把$num[j’]$~$num[-1]$反转一次</li>
+</ul>
+</blockquote>
+<p>​    为什么可以想到这个算法呢？我觉得可以从以下几点考虑</p>
+<ul>
+<li><p>字典序的最后一个是完全的降序，也就是倒过来是完全的升序</p>
+</li>
+<li><p>那么如果不是字典序的最后一项，打破他的情况只可能是倒序时出现降序，而第一次出现降序时就为关键的位置</p>
+</li>
+<li><p>要使字典序变得更大，需要找到一个比当前确定的位置更大的数，这个数来自于这个位置之后的一个数</p>
+</li>
+<li><p>注意最后还要反转一次那个位置之后的序列，这个原理类似于从199到200的变化。百位+1了，十位和个位置零</p>
+<p>有了以上的分析，可以给出如下代码（注意全降序序列情况的处理）：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">nextPermutation</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> i;</span><br><span class="line">        <span class="keyword">if</span>(nums.size() == <span class="number">1</span>) <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">for</span>(i=nums.size()<span class="number">-2</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i+<span class="number">1</span>]&gt;nums[i]) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> switchFrom = i;</span><br><span class="line">        <span class="keyword">if</span>(switchFrom &gt;= <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">for</span>(i=nums.size()<span class="number">-1</span>;i&gt;switchFrom;i--)&#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] &gt; nums[switchFrom]) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> switchTo = i;</span><br><span class="line">        <span class="keyword">int</span> tmp = nums[switchTo];</span><br><span class="line">        nums[switchTo] = nums[switchFrom];</span><br><span class="line">        nums[switchFrom] = tmp;</span><br><span class="line">        &#125;</span><br><span class="line">        reverse(nums.begin()+switchFrom+<span class="number">1</span>,nums.end());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>未完待续…</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Leetcode/" rel="tag"># Leetcode</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/22/New-Beginning/" rel="next" title="New Beginning">
+                <i class="fa fa-chevron-left"></i> New Beginning
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/24/Leetcode热题100（2）/" rel="prev" title="Leetcode热题100（2）">
+                Leetcode热题100（2） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Jack Xin</p>
+              <p class="site-description motion-element" itemprop="description">Tech, Music & Love</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#19-删除链表的倒数第n个节点"><span class="nav-number">1.</span> <span class="nav-text">19.删除链表的倒数第n个节点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#两遍扫描"><span class="nav-number">1.1.</span> <span class="nav-text">两遍扫描</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双指针法"><span class="nav-number">1.2.</span> <span class="nav-text">双指针法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#21-23-合并k个有序链表"><span class="nav-number">2.</span> <span class="nav-text">21/23.合并k个有序链表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#合并2个有序链表"><span class="nav-number">2.1.</span> <span class="nav-text">合并2个有序链表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#迭代"><span class="nav-number">2.1.1.</span> <span class="nav-text">迭代</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#递归"><span class="nav-number">2.1.2.</span> <span class="nav-text">递归</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#合并k个有序链表"><span class="nav-number">2.2.</span> <span class="nav-text">合并k个有序链表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#迭代-1"><span class="nav-number">2.2.1.</span> <span class="nav-text">迭代</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#优先队列优化"><span class="nav-number">2.2.2.</span> <span class="nav-text">优先队列优化</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#下一个排列"><span class="nav-number">3.</span> <span class="nav-text">下一个排列</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jack Xin</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
