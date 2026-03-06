@@ -1,152 +1,145 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Haoran Xin",
+    "email": "hxin883@connect.hkust-gz.edu.cn",
+    "phone": "+86-189-9028-4840",
+    "website": "https://xinhaoran.github.io",
+    "summary": "Ph.D. student in Artificial Intelligence at HKUST(GZ), researching Recommender Systems, Large Language Models, and Data Mining.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Guangzhou",
+      "countryCode": "CN",
+      "region": "Guangdong"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
-        "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "url": "https://scholar.google.com/citations?user=IIUxf68AAAAJ"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Tencent Ads, Tencent",
+      "position": "Research Intern",
+      "startDate": "2025-05-01",
+      "endDate": "2026-02-01",
+      "summary": "Large-scale generative models for advertising prediction and ad delivery optimization.",
+      "location": "Shenzhen, China"
+    },
+    {
+      "company": "Business Intelligence Lab, Baidu Research",
+      "position": "Research Intern",
+      "startDate": "2019-09-01",
+      "endDate": "2023-04-01",
+      "summary": "Large-scale user behavior and spatiotemporal data processing. Applied cutting-edge technologies to map, feed, intelligent transportation, and other businesses.",
+      "location": "Beijing, China"
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "The Hong Kong University of Science and Technology (Guangzhou)",
+      "area": "Ph.D. in Artificial Intelligence",
+      "startDate": "2023-09",
+      "endDate": "Present",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
+      "institution": "University of Science and Technology of China",
+      "area": "MPhil in Data Science (Computer Science and Technology)",
+      "startDate": "2020-09",
+      "endDate": "2023-06",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
+      "institution": "Hefei University of Technology",
+      "area": "B.Eng. in Computer Science and Technology",
+      "startDate": "2016-09",
+      "endDate": "2020-06",
+      "gpa": "3.87/4.3 (rank 4/135, top 2.9%)",
       "courses": []
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "LLMCDSR: Enhancing Cross-Domain Sequential Recommendation with Large Language Models",
+      "publisher": "ACM TOIS",
+      "releaseDate": "2025",
+      "summary": "CCF-A. Leverages LLMs to enhance cross-domain sequential recommendation."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "CAPTOR: A Crowd-Aware Pre-Travel Recommender System for Out-of-Town Users",
+      "publisher": "SIGIR 2022",
+      "releaseDate": "2022",
+      "summary": "CCF-A. Crowd-aware pre-travel recommendation for out-of-town users."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Out-of-Town Recommendation with Travel Intention Modeling",
+      "publisher": "AAAI 2021",
+      "releaseDate": "2021",
+      "summary": "CCF-A. Travel intention modeling for out-of-town POI recommendation."
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "How Business Agglomeration Affects Individual Points-of-Interest: A Causal Effect Estimation Perspective",
+      "publisher": "ACM TKDD",
+      "releaseDate": "2026",
+      "summary": "CCF-B. Causal inference for business agglomeration impact analysis."
+    },
+    {
+      "name": "A Table-to-Text Framework with Heterogeneous Multidominance Attention and Self-Evaluated Multi-Pass Deliberation",
+      "publisher": "Findings of EMNLP 2023",
+      "releaseDate": "2023",
+      "summary": "CCF-B. Table-to-text generation with heterogeneous attention."
+    },
+    {
+      "name": "RLCharge: Imitative Multi-Agent Spatiotemporal Reinforcement Learning for Electric Vehicle Charging Station Recommendation",
+      "publisher": "IEEE TKDE",
+      "releaseDate": "2022",
+      "summary": "CCF-A. Multi-agent RL for EV charging station recommendation."
+    },
+    {
+      "name": "Intelligent Electric Vehicle Charging Recommendation Based on Multi-Agent Reinforcement Learning",
+      "publisher": "WWW 2021",
+      "releaseDate": "2021",
+      "summary": "CCF-A. Multi-agent RL for intelligent EV charging recommendation."
+    },
+    {
+      "name": "Parallel Temporal Encoder for Sign Language Translation",
+      "publisher": "ICIP 2019",
+      "releaseDate": "2019",
+      "summary": "CCF-C. Parallel temporal encoder for sign language translation."
     }
   ],
-  "presentations": [
+  "skills": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "Programming",
+      "keywords": ["Python", "C++"]
     }
   ],
-  "teaching": [
+  "languages": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
+      "language": "Chinese",
+      "fluency": "Native"
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "language": "English",
+      "fluency": "Professional (DET 125)"
     }
   ],
-  "portfolio": [
+  "interests": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "name": "Recommender Systems"
+    },
+    {
+      "name": "Large Language Models"
+    },
+    {
+      "name": "Data Mining"
     }
-  ]
+  ],
+  "references": [],
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }

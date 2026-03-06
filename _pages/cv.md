@@ -11,54 +11,36 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **Ph.D. Student** in Artificial Intelligence, HKUST(GZ), 2023 - Present
+  * Advisors: Prof. Hui Xiong and Prof. Ying Sun
+  * Research Interests: Recommender Systems, Large Language Models, Data Mining
+* **MPhil** in Data Science (Computer Science and Technology), USTC, 2020 - 2023
+  * Advisor: Prof. Hui Xiong
+  * Research Interests: Recommender Systems, Spatio-Temporal Data Mining
+* **B.Eng.** in Computer Science and Technology, HFUT, 2016 - 2020
+  * GPA: 3.87/4.3 (rank 4/135, top 2.9%)
 
-Work experience
+Work Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Research Intern**, Tencent Ads, Tencent, Shenzhen, China (2025.05 - 2026.02)
+  * Large-scale generative models for advertising prediction and ad delivery optimization
+* **Research Intern**, Business Intelligence Lab, Baidu Research, Beijing, China (2019.09 - 2020.09, 2021.07 - 2023.04)
+  * Large-scale user behavior and spatiotemporal data processing
+  * Applied cutting-edge technologies to map, feed, intelligent transportation, and other businesses
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
+
+Honors & Awards
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
+* Annual Outstanding Intern Award of Baidu Research, 2022
+* China National Scholarship, 2021
+* Excellent Graduate Award of Anhui Province, 2020
+
+Skills
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* **Programming:** Python, C++
+* **English:** DET: 125 (Equivalent to TOEFL 92-97) / CET-6: 581 / CET-4: 583
