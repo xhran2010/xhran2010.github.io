@@ -7,12 +7,21 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. student in AI Thrust at [The Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/), advised by [Prof. Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ) and [Prof. Ying Sun](https://sunyinggilly.github.io/). Before that, I received my MPhil degree in Data Science from the [University of Science and Technology of China (USTC)](https://www.ustc.edu.cn/) in 2023, and my B.Eng. degree in Computer Science and Technology from [Hefei University of Technology (HFUT)](https://www.hfut.edu.cn/) in 2020. My research interests include **Recommender Systems**, **Large Language Models**, and **Data Mining**.
+I am a Ph.D. candidate in AI Thrust at [The Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/), advised by [Prof. Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ) and [Prof. Ying Sun](https://sunyinggilly.github.io/). Before that, I received my MPhil degree in Data Science from the [University of Science and Technology of China (USTC)](https://www.ustc.edu.cn/) in 2023, and my B.Eng. degree in Computer Science and Technology from [Hefei University of Technology (HFUT)](https://www.hfut.edu.cn/) in 2020. My research interests include **Recommender Systems**, **Large Language Models**, and **Data Mining**.
 
 ## Publications
 See the full list on my [Google Scholar](https://scholar.google.com/citations?user=IIUxf68AAAAJ&hl=zh-CN).
 
 ### *Preprint*
+
+**Escaping the KL Agreement Trap in On-Policy Distillation**<br>
+**<ins>Haoran Xin</ins>**, Anhao Zhao, Ying Sun, Jin Li, Xiaoyu Shen, Hui Xiong
+
+**Decoupling KL and Trajectories: A Unified Perspective for SFT, DAgger, Offline RL, and OPD in LLM Distillation**<br>
+Anhao Zhao, **<ins>Haoran Xin</ins>**, Yingqi Fan, Junlong Tong, Wenjie Li, Xiaoyu Shen
+
+**Tencent Advertising Algorithm Challenge 2025: All-Modality Generative Recommendation**<br>
+Junwei Pan, Wei Xue, Chao Zhou, Xing Zhou, Lunan Fan, Yanbo Wang, **<ins>Haoran Xin</ins>**, Zhiyu Hu, Yaozheng Wang, Fengye Xu, Yurong Yang, Xiaotian Li, Junbang Huo, Wentao Ning, Yuliang Sun, Chengguo Yin, Jun Zhang, Shudong Huang, Lei Xiao, Huan Yu, Irwin King, Haijie Gu, Jie Jiang
 
 **LLMs as Better Recommenders with Natural Language Collaborative Signals: A Self-Assessing Retrieval Approach**  
 **<ins>Haoran Xin</ins>**, Ying Sun, Chao Wang, Weijia Zhang, Hui Xiong
