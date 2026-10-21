@@ -16,4 +16,6 @@ authors:
 - Feihu Jiang
 - Jingbo Zhou
 - Hui Xiong
+links:
+  PDF: https://aclanthology.org/2023.findings-emnlp.44.pdf
 ---

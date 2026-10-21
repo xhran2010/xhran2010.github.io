@@ -14,4 +14,6 @@ authors:
 - Yanke Yu
 - Weijia Zhang
 - Hui Xiong
+links:
+  PDF: https://arxiv.org/pdf/2505.19473
 ---

@@ -12,4 +12,6 @@ authors:
 - Dan Guo
 - Haoran Xin
 - Meng Wang
+links:
+  PDF: https://tangshengeng.github.io/VUT-homepage/publications/ICIP2019PTE/paper.pdf
 ---

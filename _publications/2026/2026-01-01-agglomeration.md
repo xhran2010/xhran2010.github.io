@@ -16,4 +16,6 @@ authors:
 - Tong Xu
 - Jingbo Zhou
 - Hui Xiong
+links:
+  PDF: /assets/papers/CARE.pdf
 ---

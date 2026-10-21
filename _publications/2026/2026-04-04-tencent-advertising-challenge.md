@@ -31,5 +31,5 @@ authors:
 - Haijie Gu
 - Jie Jiang
 links:
-  Paper: https://arxiv.org/abs/2604.04976
+  PDF: https://arxiv.org/pdf/2604.04976
 ---

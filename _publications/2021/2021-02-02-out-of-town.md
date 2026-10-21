@@ -16,4 +16,6 @@ authors:
 - Jingjing Gu
 - Dejing Dou
 - Hui Xiong
+links:
+  PDF: /assets/papers/TRAINOR.pdf
 ---

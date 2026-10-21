@@ -13,4 +13,6 @@ authors:
 - Chao Wang
 - Weijia Zhang
 - Hui Xiong
+links:
+  PDF: https://arxiv.org/pdf/2505.19464
 ---
