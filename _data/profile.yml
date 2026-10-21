@@ -1,0 +1,63 @@
+primary_name: "Haoran Xin"
+secondary_name: ""
+navbar_name: "Haoran Xin"
+
+positions:
+- name: Ph.D. Candidate, AI Thrust
+- name: The Hong Kong University of Science and Technology (Guangzhou)
+  logo: /assets/images/badges/hkust-gz.png
+
+email: "hxin883@connect.hkust-gz.edu.cn"
+# cv_link: link-to-your-cv-file
+gscholar: IIUxf68AAAAJ
+github: xhran2010
+# twitter: your_twitter_id  # Do not include the '@' symbol
+# linkedin: your-linked-in-id
+# orcid: 0000-0000-0000-0000
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am a Ph.D. candidate in AI Thrust at <a href="https://www.hkust-gz.edu.cn/" target="_blank">The Hong Kong University of Science and Technology (Guangzhou)</a>,
+    advised by <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ" target="_blank">Prof. Hui Xiong</a> and
+    <a href="https://sunyinggilly.github.io/" target="_blank">Prof. Ying Sun</a>.
+    Before that, I received my MPhil degree in Data Science from the <a href="https://www.ustc.edu.cn/" target="_blank">University of Science and Technology of China (USTC)</a> in 2023,
+    and my B.Eng. degree in Computer Science and Technology from <a href="https://www.hfut.edu.cn/" target="_blank">Hefei University of Technology (HFUT)</a> in 2020.
+  </p>
+  <p>
+    My research interests include <strong>Recommender Systems</strong>, <strong>Large Language Models</strong>, and <strong>Data Mining</strong>.
+  </p>
+
+portrait_url: /assets/images/photos/portrait.jpg
+
+education:
+- name: The Hong Kong University of Science and Technology (Guangzhou)
+  logo: /assets/images/badges/hkust-gz.png
+  position: Ph.D. Candidate in AI Thrust
+  date: 2023 - present
+- name: University of Science and Technology of China
+  logo: /assets/images/badges/ustc.png
+  position: MPhil in Data Science
+  date: 2020 - 2023
+- name: Hefei University of Technology
+  logo: /assets/images/badges/hfut.png
+  position: B.Eng. in Computer Science and Technology
+  date: 2016 - 2020
+
+experience:
+- name: Tencent Ads, Tencent
+  logo: /assets/images/badges/tencent.png
+  position: Research Intern, Shenzhen
+  date: 2025.05 - 2026.02
+- name: Business Intelligence Lab, Baidu Research
+  logo: /assets/images/badges/baidu.png
+  position: Research Intern, Beijing
+  date: 2019.09 - 2020.09, 2021.07 - 2023.04
+
+awards:
+- name: Annual Outstanding Intern Award of Baidu Research
+  date: 2022
+- name: China National Scholarship
+  date: 2021
+- name: Excellent Graduate Award of Anhui Province
+  date: 2020
