@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Dragon Li (狸花猫) head -->
+  <!-- ears -->
+  <path d="M7 30 L10 4 L28 17 Z" fill="#8a6f4e" stroke="#3a2c20" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M57 30 L54 4 L36 17 Z" fill="#8a6f4e" stroke="#3a2c20" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M12 23 L13 11 L22 18 Z" fill="#e3a99a"/>
+  <path d="M52 23 L51 11 L42 18 Z" fill="#e3a99a"/>
+  <!-- head -->
+  <ellipse cx="32" cy="37" rx="26" ry="22" fill="#9c8060" stroke="#3a2c20" stroke-width="2"/>
+  <!-- forehead "M" marking -->
+  <path d="M22 26 L25 17 L32 24 L39 17 L42 26" fill="none" stroke="#2e231a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 16 L32 22" stroke="#2e231a" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- cheek stripes -->
+  <path d="M7 36 L15 38 M8 43 L15 43" stroke="#2e231a" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M57 36 L49 38 M56 43 L49 43" stroke="#2e231a" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- muzzle -->
+  <ellipse cx="32" cy="47" rx="11" ry="8.5" fill="#efe3cf"/>
+  <!-- eyes -->
+  <ellipse cx="21" cy="35" rx="6" ry="5.2" fill="#c3cf3e" stroke="#2e231a" stroke-width="1.6"/>
+  <ellipse cx="43" cy="35" rx="6" ry="5.2" fill="#c3cf3e" stroke="#2e231a" stroke-width="1.6"/>
+  <ellipse cx="21" cy="35" rx="1.8" ry="4.3" fill="#1b1410"/>
+  <ellipse cx="43" cy="35" rx="1.8" ry="4.3" fill="#1b1410"/>
+  <circle cx="22.6" cy="33" r="1.1" fill="#fff"/>
+  <circle cx="44.6" cy="33" r="1.1" fill="#fff"/>
+  <!-- nose & mouth -->
+  <path d="M28.5 43 L35.5 43 L32 46.5 Z" fill="#d98479" stroke="#3a2c20" stroke-width="1" stroke-linejoin="round"/>
+  <path d="M32 46.5 L32 49 M32 49 Q29 52 26.5 50 M32 49 Q35 52 37.5 50" fill="none" stroke="#3a2c20" stroke-width="1.4" stroke-linecap="round"/>
+</svg>
