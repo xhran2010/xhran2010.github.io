@@ -13,5 +13,5 @@ authors:
 - Haoran Xin
 - Meng Wang
 links:
-  PDF: https://tangshengeng.github.io/VUT-homepage/publications/ICIP2019PTE/paper.pdf
+  Paper: https://tangshengeng.github.io/VUT-homepage/publications/ICIP2019PTE/paper.pdf
 ---

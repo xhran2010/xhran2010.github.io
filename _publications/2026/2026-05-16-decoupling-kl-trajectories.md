@@ -14,5 +14,5 @@ authors:
 - Wenjie Li
 - Xiaoyu Shen
 links:
-  PDF: https://arxiv.org/pdf/2605.16826
+  Paper: https://arxiv.org/pdf/2605.16826
 ---

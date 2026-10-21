@@ -17,5 +17,5 @@ authors:
 - Jingbo Zhou
 - Hui Xiong
 links:
-  PDF: /assets/papers/CARE.pdf
+  Paper: /assets/papers/CARE.pdf
 ---

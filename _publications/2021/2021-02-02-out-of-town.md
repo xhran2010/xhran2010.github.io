@@ -17,5 +17,5 @@ authors:
 - Dejing Dou
 - Hui Xiong
 links:
-  PDF: /assets/papers/TRAINOR.pdf
+  Paper: /assets/papers/TRAINOR.pdf
 ---

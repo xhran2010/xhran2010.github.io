@@ -17,6 +17,5 @@ authors:
 - Xiaoyu Shen
 - Hui Xiong
 links:
-  PDF: /assets/papers/KAT.pdf
-  arXiv: https://arxiv.org/abs/2606.09471
+  Paper: /assets/papers/KAT.pdf
 ---

@@ -16,5 +16,5 @@ authors:
 - Dejing Dou
 - Hui Xiong
 links:
-  PDF: https://arxiv.org/pdf/2102.07359
+  Paper: https://arxiv.org/pdf/2102.07359
 ---
