@@ -5,6 +5,7 @@ selected:       true
 pub:            "Conference on Neural Information Processing Systems (NeurIPS)"
 pub_date:       "2026"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-primary">CCF-A</span>'
+cover:          /assets/images/covers/svan.png
 authors:
 - Haoran Xin
 - Junwei Pan
