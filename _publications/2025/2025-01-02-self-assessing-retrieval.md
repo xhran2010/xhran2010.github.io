@@ -1,11 +1,12 @@
 ---
 title:          "LLMs as Better Recommenders with Natural Language Collaborative Signals: A Self-Assessing Retrieval Approach"
 date:           2025-01-02 00:01:00 +0800
-selected:       true
+selected:       false
 pub:            "Preprint"
 pub_date:       "2025"
 abstract: >-
   This paper proposes a self-assessing retrieval approach that leverages natural language collaborative signals to improve LLM-based recommendation.
+cover:          /assets/images/covers/score.png
 authors:
 - Haoran Xin
 - Ying Sun

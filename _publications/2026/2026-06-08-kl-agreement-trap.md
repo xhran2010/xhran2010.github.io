@@ -6,6 +6,7 @@ pub:            "arXiv preprint"
 pub_date:       "2026"
 abstract: >-
   This paper identifies the low-KL agreement trap in on-policy distillation and proposes a training-adaptive termination rule.
+cover:          /assets/images/covers/kat.png
 authors:
 - Haoran Xin
 - Anhao Zhao

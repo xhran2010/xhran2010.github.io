@@ -7,6 +7,7 @@ pub_date:       "2021"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-primary">CCF-A</span>'
 abstract: >-
   This paper addresses the challenge of recommending points-of-interest to out-of-town users by modeling travel intentions.
+cover:          /assets/images/covers/trainor.png
 authors:
 - Haoran Xin
 - Xinjiang Lu

@@ -7,6 +7,7 @@ pub_date:       "2026"
 pub_last:       ' <span class="badge badge-pill badge-publication badge-primary">CCF-B</span>'
 abstract: >-
   This paper applies causal inference techniques to quantify the impact of urban business agglomeration on individual POI performance.
+cover:          /assets/images/covers/care.jpg
 authors:
 - Haoran Xin
 - Xinjiang Lu
