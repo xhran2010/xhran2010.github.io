@@ -4,7 +4,7 @@ date:           2023-12-06 00:01:00 +0800
 selected:       false
 pub:            "Findings of the Association for Computational Linguistics: EMNLP"
 pub_date:       "2023"
-pub_last:       ' <span class="badge badge-pill badge-publication badge-primary">CCF-B</span>'
+pub_last:       ''
 abstract: >-
   This paper proposes a table-to-text generation framework with heterogeneous multidominance attention and self-evaluated multi-pass deliberation.
 authors:

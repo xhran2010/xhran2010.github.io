@@ -5,7 +5,7 @@ selected:       true
 pub_post:       ", Main Conference"
 pub:            "Conference on Empirical Methods in Natural Language Processing (EMNLP)"
 pub_date:       "2026"
-pub_last:       ' <span class="badge badge-pill badge-publication badge-danger">Oral</span> <span class="badge badge-pill badge-publication badge-primary">CCF-B</span>'
+pub_last:       ' <span class="badge badge-pill badge-publication badge-primary">Oral</span>'
 abstract: >-
   This paper identifies the low-KL agreement trap in on-policy distillation and proposes a training-adaptive termination rule.
 cover:          /assets/images/covers/kat.jpg

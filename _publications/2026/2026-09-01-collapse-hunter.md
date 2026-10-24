@@ -4,7 +4,7 @@ date:           2026-09-01 00:01:00 +0800
 selected:       true
 pub:            "Conference on Neural Information Processing Systems (NeurIPS)"
 pub_date:       "2026"
-pub_last:       ' <span class="badge badge-pill badge-publication badge-primary">CCF-A</span>'
+pub_last:       ''
 cover:          /assets/images/covers/svan.png
 authors:
 - Haoran Xin
