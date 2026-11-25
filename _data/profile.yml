@@ -19,13 +19,18 @@ short_bio_text_justify: false
 short_bio: >-
   <p>
     I am a Ph.D. candidate in AI Thrust at <a href="https://www.hkust-gz.edu.cn/" target="_blank">The Hong Kong University of Science and Technology (Guangzhou)</a>,
-    advised by <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ" target="_blank">Prof. Hui Xiong</a> and
+    advised by <a href="https://hkustai.github.io/" target="_blank">Prof. Hui Xiong</a> and
     <a href="https://sunyinggilly.github.io/" target="_blank">Prof. Ying Sun</a>.
     Before that, I received my MPhil degree in Data Science from the <a href="https://www.ustc.edu.cn/" target="_blank">University of Science and Technology of China (USTC)</a> in 2023,
     and my B.Eng. degree in Computer Science and Technology from <a href="https://www.hfut.edu.cn/" target="_blank">Hefei University of Technology (HFUT)</a> in 2020.
   </p>
   <p>
-    My research interests include <strong>Recommender Systems</strong>, <strong>Large Language Models</strong>, and <strong>Data Mining</strong>.
+    My research interests include <strong>Recommender Systems</strong>, <strong>Large Language Models (LLMs)</strong>, and <strong>Data Mining</strong>.
+    In particular, I focus on frontier <strong>generative recommendation architectures</strong>, <strong>LLM-enhanced recommendation</strong> leveraging world knowledge,
+    and <strong>LLM distillation</strong>—including adapting distillation techniques to generative recommendation to achieve stronger serving performance with higher efficiency.
+  </p>
+  <p>
+    I expect to graduate in Summer 2027 and am currently looking for industry job opportunities.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
